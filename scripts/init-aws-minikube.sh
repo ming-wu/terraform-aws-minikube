@@ -86,6 +86,9 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 # Allow load balancers to route to master
 kubectl label nodes --all node-role.kubernetes.io/master-
 
+# Label as none GPU node
+kubectl label nodes --all gpu.enabled=false
+
 # Allow the user to administer the cluster
 kubectl create clusterrolebinding admin-cluster-binding --clusterrole=cluster-admin --user=admin
 
