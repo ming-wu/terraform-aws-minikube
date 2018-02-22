@@ -5,6 +5,7 @@
             "Effect": "Allow",
             "Action": [
                 "ec2:*",
+                "s3:*",
                 "elasticloadbalancing:*",
                 "ecr:GetAuthorizationToken",
                 "ecr:BatchCheckLayerAvailability",
